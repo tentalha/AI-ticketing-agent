@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #f5f5f5;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.button-primary {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.button-primary:hover {
+    background-color: #45a049;
+}
+
+.button-secondary {
+    background-color: #2196F3;
+    color: white;
+}
+
+.button-secondary:hover {
+    background-color: #0b7dda;
+}
+
+.button-danger {
+    background-color: #f44336;
+    color: white;
+}
+
+.button-danger:hover {
+    background-color: #da190b;
+}
+
+.input,
+.textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.textarea {
+    min-height: 100px;
+    resize: vertical;
+    font-family: inherit;
+}
+
+.label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #333;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.status-open {
+    background-color: #e3f2fd;
+    color: #1976d2;
+}
+
+.status-pending {
+    background-color: #fff3e0;
+    color: #f57c00;
+}
+
+.status-resolved {
+    background-color: #e8f5e9;
+    color: #388e3c;
+}
+
+.status-escalated {
+    background-color: #ffebee;
+    color: #d32f2f;
+}
+
+.message {
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    position: relative;
+}
+
+.message-guest {
+    background-color: #e3f2fd;
+    margin-left: 0;
+    margin-right: 50px;
+}
+
+.message-agent,
+.message-admin {
+    background-color: #f5f5f5;
+    margin-left: 50px;
+    margin-right: 0;
+}
+
+.message-pending {
+    background-color: #fff9c4;
+    border: 2px dashed #fbc02d;
+}
+
+.message-sender {
+    font-weight: 600;
+    color: #666;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.message-content {
+    color: #333;
+    line-height: 1.5;
+}
+
+.message-meta {
+    font-size: 11px;
+    color: #999;
+    margin-top: 8px;
+}
+
+.error {
+    color: #d32f2f;
+    padding: 10px;
+    background-color: #ffebee;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+.success {
+    color: #388e3c;
+    padding: 10px;
+    background-color: #e8f5e9;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+.loading {
+    text-align: center;
+    padding: 40px;
+    color: #666;
+}
+
+.header {
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    color: #333;
+    font-size: 24px;
+}
+
+.nav {
+    margin-top: 15px;
+}
+
+.nav a {
+    color: #2196F3;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: 500;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.ticket-list {
+    list-style: none;
+}
+
+.ticket-item {
+    background: white;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+    border: 1px solid #e0e0e0;
+}
+
+.ticket-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ticket-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.ticket-id {
+    font-weight: 600;
+    color: #2196F3;
+}
+
+.ticket-subject {
+    color: #333;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.ticket-meta {
+    font-size: 12px;
+    color: #666;
+}
+
+.confidence-score {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.confidence-high {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+.confidence-medium {
+    background-color: #fff3e0;
+    color: #ef6c00;
+}
+
+.confidence-low {
+    background-color: #ffebee;
+    color: #c62828;
+}

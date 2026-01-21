@@ -1,0 +1,85 @@
+{
+    "faqs": [
+        {
+            "id": "FAQ-001",
+            "category": "Account",
+            "question": "How do I reset my password?",
+            "answer": "To reset your password, click on 'Forgot Password' on the login page. Enter your email address and we'll send you a reset link. The link expires in 24 hours. If you don't receive the email, check your spam folder or contact support."
+        },
+        {
+            "id": "FAQ-002",
+            "category": "Account",
+            "question": "How do I change my email address?",
+            "answer": "Log into your account, go to Settings > Profile > Email Address. Enter your new email and verify it by clicking the confirmation link sent to the new address. Your old email will remain active until verification is complete."
+        },
+        {
+            "id": "FAQ-003",
+            "category": "Billing",
+            "question": "What payment methods do you accept?",
+            "answer": "We accept all major credit cards (Visa, Mastercard, American Express, Discover), PayPal, and bank transfers for enterprise customers. Cryptocurrency payments are available for annual plans."
+        },
+        {
+            "id": "FAQ-004",
+            "category": "Billing",
+            "question": "When will I be charged?",
+            "answer": "You'll be charged immediately upon purchase. For subscriptions, billing occurs on the same day each month/year depending on your plan. You'll receive an email receipt after each charge. Auto-renewal happens 24 hours before subscription expires."
+        },
+        {
+            "id": "FAQ-005",
+            "category": "Features",
+            "question": "What's the difference between plans?",
+            "answer": "Basic Plan ($9.99/mo): 1 user, 5GB storage, email support. Business Plan ($49.99/mo): 10 users, 50GB storage, priority support, API access. Enterprise Plan ($299.99/mo): Unlimited users, 500GB storage, 24/7 support, custom integrations, dedicated account manager."
+        },
+        {
+            "id": "FAQ-006",
+            "category": "Features",
+            "question": "Can I upgrade or downgrade my plan?",
+            "answer": "Yes! You can change plans anytime from your account settings. Upgrades take effect immediately and you'll be charged the prorated difference. Downgrades take effect at the end of your current billing cycle."
+        },
+        {
+            "id": "FAQ-007",
+            "category": "Support",
+            "question": "What are your support hours?",
+            "answer": "Email support: 24/7 with response within 24 hours. Live chat: Monday-Friday 9AM-6PM EST. Phone support: Enterprise customers only, Monday-Friday 8AM-8PM EST. Emergency hotline for critical issues available to Business and Enterprise plans."
+        },
+        {
+            "id": "FAQ-008",
+            "category": "Support",
+            "question": "How do I contact support?",
+            "answer": "Submit a ticket through this system, email support@company.com, use live chat on our website (during business hours), or call our enterprise hotline if you're on an Enterprise plan. Include your account email and detailed description for faster resolution."
+        },
+        {
+            "id": "FAQ-009",
+            "category": "General",
+            "question": "Do you offer a free trial?",
+            "answer": "Yes! All new users get a 14-day free trial of our Business Plan with no credit card required. You can cancel anytime during the trial period without being charged. Trial includes access to all Business Plan features."
+        },
+        {
+            "id": "FAQ-010",
+            "category": "General",
+            "question": "Is my data secure?",
+            "answer": "Absolutely. We use bank-level 256-bit SSL encryption, data is stored in SOC 2 certified data centers, regular security audits are performed, and we comply with GDPR, CCPA, and HIPAA standards. Two-factor authentication is available and recommended for all accounts."
+        }
+    ],
+    "companyInfo": {
+        "name": "Customer Support System Inc.",
+        "founded": "2020",
+        "headquarters": "San Francisco, CA",
+        "email": "support@company.com",
+        "phone": "+1-800-SUPPORT",
+        "website": "https://www.company.com",
+        "businessHours": "Monday-Friday 9AM-6PM EST",
+        "socialMedia": {
+            "twitter": "@company",
+            "linkedin": "company-inc",
+            "facebook": "company.official"
+        }
+    },
+    "quickLinks": {
+        "documentation": "https://docs.company.com",
+        "apiReference": "https://api.company.com/docs",
+        "statusPage": "https://status.company.com",
+        "community": "https://community.company.com",
+        "blog": "https://blog.company.com"
+    }
+}

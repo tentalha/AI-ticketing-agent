@@ -1,0 +1,17 @@
+node_modules/
+
+.DS_Store
+
+*.log
+
+
+
+# Don't ignore the .env files for this assessment
+
+# (In production, these would be ignored)
+
+config.bat
+
+temp_auto_push.bat
+
+temp_interactive_push.bat

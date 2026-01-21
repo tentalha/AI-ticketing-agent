@@ -1,0 +1,73 @@
+{
+    "orders": [
+        {
+            "orderId": "ORD-2024-001",
+            "customerEmail": "john@example.com",
+            "orderDate": "2024-12-15",
+            "items": [
+                {
+                    "productId": "PRD-101",
+                    "name": "Premium Subscription - Annual",
+                    "quantity": 1,
+                    "price": 99.99
+                }
+            ],
+            "total": 99.99,
+            "status": "completed",
+            "paymentMethod": "credit_card"
+        },
+        {
+            "orderId": "ORD-2024-002",
+            "customerEmail": "sarah@example.com",
+            "orderDate": "2024-12-20",
+            "items": [
+                {
+                    "productId": "PRD-202",
+                    "name": "Business Plan - Monthly",
+                    "quantity": 1,
+                    "price": 49.99
+                }
+            ],
+            "total": 49.99,
+            "status": "completed",
+            "paymentMethod": "paypal"
+        },
+        {
+            "orderId": "ORD-2024-003",
+            "customerEmail": "mike@example.com",
+            "orderDate": "2025-01-02",
+            "items": [
+                {
+                    "productId": "PRD-303",
+                    "name": "Enterprise Package",
+                    "quantity": 1,
+                    "price": 299.99
+                },
+                {
+                    "productId": "PRD-304",
+                    "name": "Additional User Licenses (x5)",
+                    "quantity": 5,
+                    "price": 25.00
+                }
+            ],
+            "total": 424.99,
+            "status": "processing",
+            "paymentMethod": "credit_card"
+        }
+    ],
+    "refundPolicy": {
+        "standardRefundPeriod": "30 days",
+        "conditions": [
+            "Full refund available within 30 days of purchase",
+            "Partial refunds considered for annual subscriptions after 30 days",
+            "No refunds for monthly subscriptions after service period has started",
+            "Digital products are non-refundable after download"
+        ],
+        "processingTime": "5-7 business days",
+        "exceptions": [
+            "Technical issues preventing service use qualify for full refund",
+            "Duplicate charges will be refunded immediately",
+            "Unauthorized charges eligible for full refund with proof"
+        ]
+    }
+}

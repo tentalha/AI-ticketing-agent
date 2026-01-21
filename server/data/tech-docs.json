@@ -1,0 +1,232 @@
+{
+    "commonIssues": [
+        {
+            "id": "TECH-001",
+            "category": "Login",
+            "issue": "Cannot login - Invalid credentials error",
+            "symptoms": [
+                "Error message 'Invalid email or password'",
+                "Login button unresponsive",
+                "Redirected back to login page"
+            ],
+            "causes": [
+                "Incorrect email or password",
+                "Account not verified",
+                "Account locked after multiple failed attempts",
+                "Browser cookies disabled"
+            ],
+            "solutions": [
+                {
+                    "step": 1,
+                    "action": "Verify email address is correct (case-sensitive)"
+                },
+                {
+                    "step": 2,
+                    "action": "Try password reset if unsure of password"
+                },
+                {
+                    "step": 3,
+                    "action": "Check email for verification link if recently registered"
+                },
+                {
+                    "step": 4,
+                    "action": "Wait 30 minutes if account is locked due to failed attempts"
+                },
+                {
+                    "step": 5,
+                    "action": "Enable cookies in browser settings"
+                }
+            ],
+            "escalate": "If issue persists after 24 hours, escalate to backend team"
+        },
+        {
+            "id": "TECH-002",
+            "category": "Performance",
+            "issue": "Application loading slowly or timing out",
+            "symptoms": [
+                "Pages take >10 seconds to load",
+                "Spinning loader indefinitely",
+                "Timeout errors",
+                "Blank screen"
+            ],
+            "causes": [
+                "Poor internet connection",
+                "Browser cache issues",
+                "Server maintenance",
+                "Large dataset being processed"
+            ],
+            "solutions": [
+                {
+                    "step": 1,
+                    "action": "Check internet connection speed (minimum 1 Mbps required)"
+                },
+                {
+                    "step": 2,
+                    "action": "Clear browser cache and cookies"
+                },
+                {
+                    "step": 3,
+                    "action": "Try different browser (Chrome, Firefox, Safari)"
+                },
+                {
+                    "step": 4,
+                    "action": "Disable browser extensions/ad blockers temporarily"
+                },
+                {
+                    "step": 5,
+                    "action": "Check status page at status.company.com for outages"
+                }
+            ],
+            "escalate": "If issue occurs across multiple browsers and devices, escalate immediately"
+        },
+        {
+            "id": "TECH-003",
+            "category": "API",
+            "issue": "API returning 401 Unauthorized error",
+            "symptoms": [
+                "Error code 401",
+                "Authentication failed message",
+                "API key rejected"
+            ],
+            "causes": [
+                "Invalid or expired API key",
+                "API key not included in request header",
+                "Incorrect authentication format",
+                "API access not enabled for account tier"
+            ],
+            "solutions": [
+                {
+                    "step": 1,
+                    "action": "Verify API key is correct and active in account settings"
+                },
+                {
+                    "step": 2,
+                    "action": "Ensure header format: 'Authorization: Bearer YOUR_API_KEY'"
+                },
+                {
+                    "step": 3,
+                    "action": "Check if API key has required permissions/scopes"
+                },
+                {
+                    "step": 4,
+                    "action": "Regenerate API key if potentially compromised"
+                },
+                {
+                    "step": 5,
+                    "action": "Verify account plan includes API access"
+                }
+            ],
+            "escalate": "If valid API key continues to fail, escalate to API team"
+        },
+        {
+            "id": "TECH-004",
+            "category": "Integration",
+            "issue": "Third-party integration not syncing",
+            "symptoms": [
+                "Data not updating",
+                "Sync status shows 'Failed'",
+                "Missing records"
+            ],
+            "causes": [
+                "Integration disconnected",
+                "Third-party service API changes",
+                "Rate limit exceeded",
+                "Incorrect permissions"
+            ],
+            "solutions": [
+                {
+                    "step": 1,
+                    "action": "Disconnect and reconnect the integration"
+                },
+                {
+                    "step": 2,
+                    "action": "Verify third-party service is operational"
+                },
+                {
+                    "step": 3,
+                    "action": "Check integration permissions are still granted"
+                },
+                {
+                    "step": 4,
+                    "action": "Review sync logs for specific error messages"
+                },
+                {
+                    "step": 5,
+                    "action": "Wait 15 minutes and retry if rate limited"
+                }
+            ],
+            "escalate": "If multiple integrations failing, escalate as potential system issue"
+        },
+        {
+            "id": "TECH-005",
+            "category": "Data",
+            "issue": "Data not saving or changes not persisting",
+            "symptoms": [
+                "Changes revert after page refresh",
+                "Save button not working",
+                "Error message on save"
+            ],
+            "causes": [
+                "Network interruption during save",
+                "Browser local storage full",
+                "Session expired",
+                "Validation errors"
+            ],
+            "solutions": [
+                {
+                    "step": 1,
+                    "action": "Check for error messages indicating validation issues"
+                },
+                {
+                    "step": 2,
+                    "action": "Ensure all required fields are filled"
+                },
+                {
+                    "step": 3,
+                    "action": "Try saving again with stable internet connection"
+                },
+                {
+                    "step": 4,
+                    "action": "Clear browser local storage"
+                },
+                {
+                    "step": 5,
+                    "action": "Log out and log back in to refresh session"
+                }
+            ],
+            "escalate": "If data loss occurs, escalate immediately to data recovery team"
+        }
+    ],
+    "errorCodes": {
+        "400": "Bad Request - Check request format and required parameters",
+        "401": "Unauthorized - Verify authentication credentials",
+        "403": "Forbidden - Insufficient permissions for this action",
+        "404": "Not Found - Resource does not exist or URL is incorrect",
+        "429": "Too Many Requests - Rate limit exceeded, wait before retrying",
+        "500": "Internal Server Error - Server issue, escalate if persistent",
+        "502": "Bad Gateway - Temporary connectivity issue, retry in a few minutes",
+        "503": "Service Unavailable - System maintenance or overload"
+    },
+    "systemRequirements": {
+        "browsers": [
+            "Chrome 90+",
+            "Firefox 88+",
+            "Safari 14+",
+            "Edge 90+"
+        ],
+        "internet": "Minimum 1 Mbps (5 Mbps recommended)",
+        "javascript": "Must be enabled",
+        "cookies": "Must be enabled",
+        "screenResolution": "Minimum 1024x768"
+    },
+    "troubleshootingChecklist": [
+        "Clear browser cache and cookies",
+        "Try incognito/private browsing mode",
+        "Disable browser extensions",
+        "Test on different browser",
+        "Check internet connection",
+        "Verify system status page",
+        "Try different device",
+        "Check for pending system updates"
+    ]
+}
